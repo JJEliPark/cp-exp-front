@@ -88,12 +88,12 @@ const ResizableContainer: React.FC = () => {
     console.log(filename);
     try {
       const graphOverviewResponse = await axios.get(
-        `${process.env.REACT_APP_API_URL}/graph/overview?filename=${filename}`
+        `http://34.47.92.192:8000/graph/overview?filename=${filename}`
       );
       const graphOverviewPath = graphOverviewResponse.data.filepath;
 
       const nodeEdgeResponse = await axios.get(
-        `${process.env.REACT_APP_API_URL}/graph/node-edge?filename=${filename}`
+        `http://34.47.92.192:8000/graph/node-edge?filename=${filename}`
       );
       const nodeEdgePath = nodeEdgeResponse.data.filepath;
 
