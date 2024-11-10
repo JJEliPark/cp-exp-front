@@ -87,58 +87,58 @@ const OverviewPanel: React.FC<OverviewPanelProps> = ({
         <Row>
           <OverviewItem
             label="Node Count"
-            value={graphData.node_count.toString()}
+            value={graphData.node_count?.toString() || "N/A"}
             onCopy={handleCopy}
           />
           <OverviewItem
             label="Edge Count"
-            value={graphData.edge_count.toString()}
+            value={graphData.edge_count?.toString() || "N/A"}
             onCopy={handleCopy}
           />
         </Row>
         <Row>
           <OverviewItem
             label="AVG Degree"
-            value={graphData.average_degree.toFixed(2)}
+            value={graphData.average_degree?.toFixed(2) || "N/A"}
             onCopy={handleCopy}
           />
           <OverviewItem
             label="Density"
-            value={graphData.density.toFixed(4)}
+            value={graphData.density?.toFixed(4) || "N/A"}
             onCopy={handleCopy}
           />
         </Row>
 
         <OverviewItem
           label="AVG Clustering Coefficient"
-          value={graphData.average_clustering_coefficient.toFixed(4)}
+          value={graphData.average_clustering_coefficient?.toFixed(4) || "N/A"}
           onCopy={handleCopy}
         />
         {graphData.average_shortest_path_length !== null && (
           <OverviewItem
             label="AVG Shortest Path Length"
-            value={graphData.average_shortest_path_length.toFixed(2)}
+            value={graphData.average_shortest_path_length?.toFixed(2) || "N/A"}
             onCopy={handleCopy}
           />
         )}
         <OverviewItem
           label="AVG Degree Centrality"
-          value={graphData.degree_centrality_avg.toFixed(4)}
+          value={graphData.degree_centrality_avg?.toFixed(4) || "N/A"}
           onCopy={handleCopy}
         />
         <OverviewItem
           label="AVG Betweenness Centrality"
-          value={graphData.betweenness_centrality_avg.toFixed(4)}
+          value={graphData.betweenness_centrality_avg?.toFixed(4) || "N/A"}
           onCopy={handleCopy}
         />
         <OverviewItem
           label="AVG Closeness Centrality"
-          value={graphData.closeness_centrality_avg.toFixed(4)}
+          value={graphData.closeness_centrality_avg?.toFixed(4) || "N/A"}
           onCopy={handleCopy}
         />
         <OverviewItem
           label="AVG Eigenvector Centrality"
-          value={graphData.eigenvector_centrality_avg.toFixed(4)}
+          value={graphData.eigenvector_centrality_avg?.toFixed(4) || "N/A"}
           onCopy={handleCopy}
         />
       </Container>
