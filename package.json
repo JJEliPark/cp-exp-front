@@ -1,6 +1,7 @@
 {
   "name": "cp-exp",
   "version": "0.1.0",
+  "homepage": "https://cp-explainer.netlify.app/",
   "private": true,
   "dependencies": {
     "@react-sigma/core": "^4.0.3",
