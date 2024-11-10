@@ -31,7 +31,7 @@ const UploadDataModal: React.FC<UploadDataModalProps> = ({
 
     try {
       const response = await axios.post(
-        `${process.env.REACT_APP_API_URL}/uploadfile/`,
+        "http://34.47.92.192:8000/uploadfile/",
         formData,
         {
           headers: {
