@@ -1,0 +1,52 @@
+# 환경 설정 파일
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 의존성 폴더
+node_modules/
+# 빌드 출력 폴더
+dist/
+build/
+
+# 캐시 및 로그 파일
+.cache/
+.yarn/
+.pnpm-store/
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 테스트 커버리지
+coverage/
+
+# OS 및 편집기 관련 파일
+.DS_Store
+Thumbs.db
+
+# IDE 설정 폴더
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Typescript 빌드 출력
+*.tsbuildinfo
+
+# Parcel cache
+.parcel-cache/
+
+# Next.js
+.next/
+out/
+
+# 기타
+.pnp
+.pnp.js
